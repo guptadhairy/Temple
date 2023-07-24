@@ -24,6 +24,7 @@
 .temple{
     width: 400px;
     height: 300px;
+    border-radius: 5px;
 }
 .gallery{
     height: 400px;
@@ -59,7 +60,9 @@
     height: 350px;
     width: 350px;
 }
-
+.member2{
+    overflow-x: hidden;
+}
 /* footer */
 .short_footer{
     border-radius: 1rem;
@@ -103,4 +106,7 @@
 .map{
     height: 400px;
     width: 300px;
+}
+.booking{
+    overflow-x: hidden;
 }

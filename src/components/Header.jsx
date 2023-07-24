@@ -30,9 +30,7 @@ const Header = () => {
                     <Button onClick={onClose} colorScheme='purple' variant={'ghost'}>
                         <Link to={'/contact'}>Contact</Link>
                     </Button>
-                    <Button onClick={onClose} colorScheme='purple' variant={'ghost'}>
-                        <Link to={'/events'}>Events</Link>
-                    </Button>
+                    
                     <Button onClick={onClose} colorScheme='purple' variant={'ghost'}>
                         <Link to={'/donate'}>Donate</Link>
                     </Button>

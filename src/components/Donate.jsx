@@ -28,7 +28,7 @@ const Donate = () => {
                 <Text mt={8} fontSize={'1rem'}>There are several options to make a donation to Shri Rameshwar Dham Temple Trust like Cheques & Demand Drafts, Cash Cardsand Internet Banking (Net Banking).</Text>
                 <Text mt={4} fontSize={'1rem'}>Please deposit Cash in the Hundis(Dan Patr) which have been kept in the Temple premises.</Text>
                 <Text fontSize={'2rem'}>Do not hand over cash to any person.</Text>
-                <Text fontSize={'1rem'} mt={4}>Cheques, Demand Drafts and Pay Orders in ANY CURRENCY have to be made in favour of Shri Rameshwar Dham Temple Trust and handed over at the Office on the first floor of the Temple. The Office will issue a donation receipt.</Text>
+                <Text px={16} fontSize={'1rem'} mt={4}>Cheques, Demand Drafts and Pay Orders in ANY CURRENCY have to be made in favour of Shri Rameshwar Dham Temple Trust and handed over at the Office on the first floor of the Temple. The Office will issue a donation receipt.</Text>
                 <Heading mt={8}>Bank Details</Heading>
                 <TableContainer bgColor={'purple.400'}>
                     <Table>

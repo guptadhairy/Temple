@@ -14,7 +14,7 @@ const Booking = () => {
                 </Heading>
                 <Text fontSize={'1rem'}>Looking to schedule a Pooja? Connect with our pandits via chat for hassle-free bookings.</Text>
             </VStack>
-            <Stack paddingY={'8'} minH={'100vh'} color={'yellow.400'} direction={['column', 'row']} justifyContent={'space-evenly'}>
+            <Stack className='booking' paddingY={'8'} minH={'100vh'} color={'yellow.400'} direction={['column', 'row']} justifyContent={'space-evenly'}>
                 <motion.div initial={{
                     x: '-100%',
                     opacity: 0,

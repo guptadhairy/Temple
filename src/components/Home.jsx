@@ -93,7 +93,8 @@ const Home = () => {
 };
 
 const MyCarousel = () =>(
-    <Carousel autoPlay className='car'
+    <Box overflowX="hidden">
+        <Carousel autoPlay 
     infiniteLoop interval={2000} showStatus={false} showThumbs={false} showArrows={false}>
         <Box w={'full'} h={'90vh'}>
             <Image  src={god4} />
@@ -112,6 +113,7 @@ const MyCarousel = () =>(
             <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>HANUMAN</Heading>
         </Box>
     </Carousel>
+    </Box>
 )
 
 export default Home
