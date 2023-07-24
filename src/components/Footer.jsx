@@ -1,9 +1,9 @@
 import { HStack, Heading, Input, Stack, VStack,Text,Image, Container, Button} from '@chakra-ui/react'
 import React, { useState } from 'react';
-import chat1 from '../assets/chat1.mp4'
+import call from '../assets/call.mp4'
 import { FaRegPaperPlane,FaYoutube,FaFacebook,FaInstagram } from 'react-icons/fa';
 import gallery from '../assets/gallery.png' 
-import {RiWhatsappFill} from 'react-icons/ri'
+// import {RiWhatsappFill} from 'react-icons/ri'
 const Footer = () => {
     const [input,setInput] = useState("");
     const formHandler = (e)=>{
@@ -14,13 +14,14 @@ const Footer = () => {
     <>
     <Container className='short_footer' maxW={'container.md'} minH={'10vh'} p={4} bgColor={'blackAlpha.900'}>
         <HStack>
-            <video className='chat' src={chat1} controls autoPlay loop></video>
+            <video className='chat' src={call} autoPlay muted loop></video>
             <VStack width={'full'}>
             <Heading py={2} w={'fit-content'} borderBottom={'2px solid'} margin={'auto'} color={'whiteAlpha.900'}>Having Any Issues ?</Heading>
-            <Text color={'whiteAlpha.900'}>Chat With Us..</Text>
+            <Text color={'whiteAlpha.900'}>Call Us..</Text>
             </VStack>
-            <a href='https://wa.me/9897807009' target='blank'><RiWhatsappFill color='green' size={'40px'} /></a>
-                <Text fontSize={'20px'} color={'whiteAlpha.900'}>Whatsapp</Text>
+            {/* <a href='https://wa.me/9897807009' target='blank'><RiWhatsappFill color='green' size={'40px'} /></a>
+                <Text fontSize={'20px'} color={'whiteAlpha.900'}>Whatsapp</Text> */}
+            <Heading color={'white'}>9997993023</Heading>
         </HStack>
     </Container>
     <Stack paddingY={'16'} bgColor={'blackAlpha.900'} minH={'50vh'} color={'yellow.400'} direction={['column','row']}>
@@ -37,7 +38,7 @@ const Footer = () => {
         <VStack width={'full'} borderRight={'2px'} alignItems={'center'} justifyContent={'center'}>
             <Heading> RAMESHWAR DHAM</Heading>
             <Image height={'50px'} width={'50px'} borderRadius={'100%'} src={gallery} alt='Founder'/>
-            <Text>Founder : DHAIRYA GUPTA </Text>
+            <Text>Created By : DHAIRYA GUPTA </Text>
             <Text>Unlock Your Potential, Learn Anywhere, Anytime</Text>
             
         </VStack>

@@ -62,7 +62,7 @@ const Contact = () => {
             delay: 1.3,
           }}
         >
-          <video src={contact} loop autoPlay controls></video>
+          <video src={contact} loop autoPlay muted></video>
         </motion.div>
       </motion.div>
     </section>

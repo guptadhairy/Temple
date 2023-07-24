@@ -57,7 +57,7 @@ const Home = () => {
                 x: 0,
                 opacity: 1
             }}>
-            <video className='peace' src={peace} autoPlay loop controls ></video>
+            <video className='peace' src={peace} autoPlay muted loop ></video>
             </motion.div>
             </HStack>
             </VStack>
@@ -73,12 +73,16 @@ const Home = () => {
         <VStack width={'full'}  alignItems={'center'} justifyContent={'center'}>
             <Image className='temple' src={live} alt='Live Darshan' />
             <Heading>Online Darshan</Heading>
-            <Button colorScheme='purple'>Aarti Videos</Button>
+            <Button colorScheme='purple'>
+                <Link to={'/aarti'}>Aarti Videos</Link>
+            </Button>
         </VStack>
         <VStack width={'full'} alignItems={'center'} justifyContent={'center'}>
             <Image className='temple' src={pooja} alt='Book Pooja' />
             <Heading>Personalized Darshan</Heading>
-            <Button colorScheme='purple'>Book Pooja</Button>
+            <Button colorScheme='purple'>
+                <Link to={'/booking'}>Book Pooja</Link>
+            </Button>
         </VStack>
     </Stack>
     <Gallery />
