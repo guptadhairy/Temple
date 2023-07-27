@@ -2,13 +2,32 @@ import { HStack, Heading, Input, Stack, VStack,Text,Image, Container, Button} fr
 import React, { useState } from 'react';
 import call from '../assets/call.mp4'
 import { FaRegPaperPlane,FaYoutube,FaFacebook,FaInstagram } from 'react-icons/fa';
+import axios from 'axios';
 import gallery from '../assets/gallery.png' 
-// import {RiWhatsappFill} from 'react-icons/ri'
+import { server } from '..';
+import { toast } from 'react-hot-toast';
+
 const Footer = () => {
-    const [input,setInput] = useState("");
-    const formHandler = (e)=>{
+    const [email,setEmail] = useState("");
+    const formHandler = async(e)=>{
         e.preventDefault();
-        setInput("");
+
+        try {
+            const {data} = await axios.post(`${server}/newsletter`,{
+                email
+            },
+            {
+                headers:{
+                    "Content-Type": "application/json"
+                },
+                withCredentials: true
+            });
+            toast.success(data.message);
+        } catch (error) {
+            toast.error("Some error");
+            console.log(error);
+        }
+        setEmail("");
     }
   return (
     <>
@@ -19,8 +38,6 @@ const Footer = () => {
             <Heading py={2} w={'fit-content'} borderBottom={'2px solid'} margin={'auto'} color={'whiteAlpha.900'}>Having Any Issues ?</Heading>
             <Text color={'whiteAlpha.900'}>Call Us..</Text>
             </VStack>
-            {/* <a href='https://wa.me/9897807009' target='blank'><RiWhatsappFill color='green' size={'40px'} /></a>
-                <Text fontSize={'20px'} color={'whiteAlpha.900'}>Whatsapp</Text> */}
             <Heading color={'white'}>9997993023</Heading>
         </HStack>
     </Container>
@@ -28,7 +45,7 @@ const Footer = () => {
         <VStack width={'full'} borderRight={'2px'} alignItems={'center'} justifyContent={'center'}>
         <HStack>
             <form onSubmit={formHandler}>
-            <Input value={input} onChange={(e) => setInput(e.target.value)} focusBorderColor='yellow' width={'300px'} placeholder='Subscribe for NewsLetter' />
+            <Input value={email} onChange={(e) => setEmail(e.target.value)} focusBorderColor='yellow' width={'300px'} placeholder='Subscribe for NewsLetter' />
             <Button colorScheme='purple' mx={4} type='submit'><FaRegPaperPlane /></Button>
             </form>
         </HStack>

@@ -5,6 +5,7 @@ import App from './App';
 
 import  ColorModeSwitcher from './ColorModeSwitcher';
 
+export const server = "https://shrirameshwardhamtemple-3dk4.vercel.app";
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);

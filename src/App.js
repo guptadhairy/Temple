@@ -12,6 +12,7 @@ import Reach from './components/Reach';
 import Donate from './components/Donate';
 import PaymentSuccess from './components/PaymentSuccess';
 import Booking from './components/Booking';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path='/booking' element={<Booking />} />
       </Routes>
       <Footer />
+      <Toaster />
     </Router>
   );
 }

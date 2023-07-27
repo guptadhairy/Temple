@@ -1,14 +1,34 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import contact from '../assets/contact.mp4'
+import axios from 'axios'
 import './contact.css'
+import { server } from "..";
+import { toast } from "react-hot-toast";
 const Contact = () => {
     const [name,setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    const submitHandler = (e)=>{
+    const submitHandler = async(e)=>{
         e.preventDefault();
+
+        try {
+          await axios.post(`${server}/contact`,{
+            name,email,message
+          },
+          {
+            headers:{
+              "Content-Type": "application/json"
+            },
+            withCredentials: true
+          });
+          toast.success("Your message send successfully");
+        } catch (error) {
+          toast.error("Some internal error");
+          console.log(error);
+        }
+
         setEmail("");
         setName("");
         setMessage("");
