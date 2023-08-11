@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+body{
+    overflow-x: auto;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -26,9 +32,10 @@
     height: 300px;
     border-radius: 5px;
 }
+.welcome{
+    font-family: 'Playfair Display', serif;
+}
 .gallery{
-    height: 400px;
-    width: 400px;
     border-radius: 100%;
     filter: drop-shadow(0 40px 10px rgba(0,0,0,0.3));
     animation: photoanimation 1s infinite ease-in-out alternate;
@@ -83,9 +90,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: white; */
     padding: 2rem;
-    /* margin-top: 10px; */
     width: 100%;
     height: 80%;
     justify-content: center;
@@ -109,4 +114,45 @@
 }
 .booking{
     overflow-x: hidden;
+}
+
+.box{
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+  }
+  
+.box img{
+    height: 100%;
+    width: 100%;  
+    object-fit: cover;
+    transition: all ease-in 0.5s;
+  }
+  .box:hover img{
+    scale: 1.1;
+  }
+
+.qr{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    color: rgb(227, 186, 62);
+    border-radius: 5px;
+    text-align: center;
+  }
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#30ff00);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#00c6ff);
 }

@@ -1,4 +1,4 @@
-import { Button, Container, HStack, Heading, Input, VStack,Text } from '@chakra-ui/react'
+import { Button, Heading, Input, VStack,Text, Stack } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import signup from '../assets/signup.mp4'
 import { Link } from 'react-router-dom'
@@ -34,10 +34,9 @@ const Signup = () => {
     setSpassword("");
   }
   return (
-    <Container maxW={'container.xl'} minH={'50vh'} p={16}>
-      <HStack>
-        <VStack width={'full'} p={16}>
-          <Heading color={'purple.600'}>Create Account</Heading>
+    <Stack direction={['column','row']} minH={'50vh'} p={16}>
+        <VStack width={'full'} p={[4, 8, 16]} maxWidth={['100%', '100%', '100%']}>
+          <Heading justifyContent={'center'} color={'purple.600'}>Create Account</Heading>
           <form className='signup' onSubmit={loginHandler}>
           <Input value={name} onChange={(e) =>setSname(e.target.value)} placeholder='Enter Your Name' />
           <Input value={email} onChange={(e) =>setSemail(e.target.value)}   placeholder='Enter Email Address' />
@@ -46,11 +45,10 @@ const Signup = () => {
           </form>
           <Text>Already Signed up ? <Link color='purple' to={'/login'}>Log In</Link> </Text>
         </VStack>
-        <VStack width={'full'}>
+        <VStack width={'full'} display={'block'}>
           <video style={{borderRadius: '5px'}} src={signup} loop autoPlay muted></video>
         </VStack>
-      </HStack>
-    </Container>
+    </Stack>
   )
 }
 

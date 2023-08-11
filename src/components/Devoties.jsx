@@ -11,8 +11,8 @@ import { Heading } from '@chakra-ui/react';
 const Devoties = () => {
   return (
     <div>
-      <Heading py={2} w={'fit-content'} borderBottom={'2px solid'} margin={'auto'} color={'purple.600'}>
-        Poojan For Pranpratishtha Done by
+      <Heading mt={4} py={2} w={'fit-content'} borderBottom={'2px solid'} margin={'auto'} color={'purple.600'}>
+      Pranpratishtha's Poojan
       </Heading>
       <Marquee style={{marginTop: '30px'}} pauseOnHover={true} direction='left' gradient={true}>
         <div className='image_wraper' >

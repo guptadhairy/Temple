@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import contact from '../assets/contact.mp4'
 import axios from 'axios'
 import './contact.css'
-import { server } from "..";
+// import { server } from "..";
 import { toast } from "react-hot-toast";
 const Contact = () => {
     const [name,setName] = useState("");
@@ -14,7 +14,7 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-          await axios.post(`${server}/contact`,{
+          await axios.post("http://localhost:4000/contact",{
             name,email,message
           },
           {

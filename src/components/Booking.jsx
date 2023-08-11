@@ -8,7 +8,7 @@ import chat2 from '../assets/chat2.mp4'
 const Booking = () => {
     return (
         <div>
-            <VStack>
+            <VStack mt={16}>
                 <Heading py={2} w={'fit-content'} borderBottom={'2px solid'} margin={'auto'} color={'purple.600'}>
                     Online Pooja Booking.
                 </Heading>

@@ -21,8 +21,8 @@ const Header = () => {
             </DrawerHeader>
             <DrawerBody>
                 <VStack alignItems={'flex-start'}>
-                    <Button onClick={onClose} colorScheme='purple' variant={'ghost'}>
-                        <Link to={'/'}>Home</Link>
+                    <Button  onClick={onClose} colorScheme='purple' variant={'ghost'}>
+                        <Link to={'/'} >Home</Link>
                     </Button>
                     <Button onClick={onClose} colorScheme='purple' variant={'ghost'}>
                         <Link to={'/about'}>About</Link>

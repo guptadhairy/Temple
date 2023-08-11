@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Photos from './components/Photos';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Footer2 from './components/Footer2';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Aarti from './components/Aarti';
@@ -31,7 +31,7 @@ function App() {
         <Route path='/paymentsuccess' element={<PaymentSuccess />} />
         <Route path='/booking' element={<Booking />} />
       </Routes>
-      <Footer />
+      <Footer2 />
       <Toaster />
     </Router>
   );

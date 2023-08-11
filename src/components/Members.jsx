@@ -21,6 +21,7 @@ const Members = () => {
         }}>
         <VStack width={'full'}  alignItems={'center'} justifyContent={'center'}>
         <Image className='member' src={temple} alt='Visit The Temple' />
+
         <Heading>PRADHAN</Heading>
         <Text style={{fontSize:"1.3rem"}}>Shri Madhukar Kashyap</Text>
         <Text>(Madhukar Katrers)</Text>
