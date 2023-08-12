@@ -137,15 +137,25 @@ body{
     height: 300px;
     border-radius: 10px;
 }
-
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 .video-overlay {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 52%;
     color: rgb(227, 186, 62);
     border-radius: 5px;
     text-align: center;
   }
+  @media (max-width: 768px) {
+    .video-overlay {
+        top: 40%;
+        left: 50%;
+    }
+}
 ::-webkit-scrollbar{
     width: 12px;
 }

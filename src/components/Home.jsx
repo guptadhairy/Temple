@@ -52,10 +52,10 @@ const Home = () => {
 };
 
 const MyCarousel = () => (
-    <div>
+    <div className="video-container">
         <video src={shiv} autoPlay muted loop></video>
         <div className="video-overlay">
-            <Heading fontSize={'6rem'}>श्री रामेश्वर धाम</Heading>
+            <Heading fontSize={['2rem','6rem']}>श्री रामेश्वर धाम</Heading>
         </div>
     </div>
 )

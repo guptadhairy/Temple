@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import contact from '../assets/contact.mp4'
 import axios from 'axios'
 import './contact.css'
-// import { server } from "..";
 import { toast } from "react-hot-toast";
 const Contact = () => {
     const [name,setName] = useState("");

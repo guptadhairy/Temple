@@ -12,7 +12,7 @@ const Booking = () => {
                 <Heading py={2} w={'fit-content'} borderBottom={'2px solid'} margin={'auto'} color={'purple.600'}>
                     Online Pooja Booking.
                 </Heading>
-                <Text fontSize={'1rem'}>Looking to schedule a Pooja? Connect with our pandits via chat for hassle-free bookings.</Text>
+                <Text fontSize={['1rem','1.2rem']} p={8}>Looking to schedule a Pooja? Connect with our pandits via chat for hassle-free bookings.</Text>
             </VStack>
             <Stack className='booking' paddingY={'8'} minH={'100vh'} color={'yellow.400'} direction={['column', 'row']} justifyContent={'space-evenly'}>
                 <motion.div initial={{
@@ -31,7 +31,7 @@ const Booking = () => {
                         <Heading>PANDIT</Heading>
                         <Text style={{ fontSize: "1.3rem" }}>Shri Yogesh Dixit Ji</Text>
                         <Container maxW={'container.md'} minH={'10vh'} p={4}>
-                            <HStack>
+                            <HStack alignItems={'center'} justifyContent={'center'}>
                                 <video className='chat' src={chat} autoPlay muted loop></video>
                                 <Text>Click to chat</Text>
                                 <a href='https://wa.me/9897807009' target='blank'><RiWhatsappFill color='green' size={'40px'} /></a>

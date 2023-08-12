@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 const Members = () => {
   return (
     <>
-    <Heading mt={16}  py={16} w={'fit-content'} margin={'auto'} color={'purple.600'}>Committee Members Of Shri Rameshwar Dham</Heading>
+    <Heading mt={16} justifyContent={'center'} alignItems={'center'} px={['4','0']} py={['8','16']} w={'fit-content'} margin={'auto'} color={'purple.600'}>Committee Members Of Shri Rameshwar Dham</Heading>
     <Stack className='member2' paddingY={'8'}  minH={'100vh'} color={'yellow.400'} direction={['column','row']} justifyContent={'space-between'}>
         <motion.div initial={{
             x: '-100%',
